@@ -33,6 +33,16 @@ app.post("/create", (req, res) => {
   );
 });
 
+app.get("/employees", (req, res) => {
+  db.query("SELECT * FROM employees", (err, response) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send(response);
+    }
+  });
+});
+
 app.listen(3001, () => {
   console.log("IDE GASSS");
 });

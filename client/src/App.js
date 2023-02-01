@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import axios, * as others from "axios";
+import EmployeesButton from "./EmployeesButton";
 
 function App() {
   const [name, setName] = useState("");
@@ -12,6 +13,7 @@ function App() {
   function displayInfo() {
     console.log(name, age, country, position, wage);
   }
+
   function addEmployee() {
     axios
       .post("http://localhost:3001/create", {
@@ -21,14 +23,12 @@ function App() {
         position: position,
         wage: wage,
       })
-      .then(() => {
-        console.log("HELL YEAH");
-      });
+      .then(() => {});
   }
 
   return (
     <div className="App">
-      <h1> Hello world</h1>
+      <h1> Employee CRUD (Create, Reed, Update, Delete)</h1>
       <form className="form-inputs">
         <div>
           <label>Name:</label>
@@ -79,6 +79,7 @@ function App() {
           Add Employee
         </button>
       </form>
+      <EmployeesButton />
     </div>
   );
 }
