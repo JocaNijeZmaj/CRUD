@@ -37,3 +37,7 @@
     font-weight: bold;
     color: black;
 }
+.deleteBtn {
+    background-color: rgb(231, 77, 77);
+    color: black;
+}

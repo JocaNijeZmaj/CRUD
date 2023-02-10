@@ -36,3 +36,15 @@
   align-items: center;
   justify-content: center;
 }
+button {
+  background-color: #B9F3FC;
+  border-radius: 5px;
+  padding: 0.2rem 0.7rem;
+  border: outset;
+  color: rgb(56, 55, 55);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  opacity: 0.8;
+}
