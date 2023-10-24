@@ -1,0 +1,13 @@
+reactDocker:
+  replicaCount: 2
+  image: satojav749/cliant:1.1
+
+mysql:
+  replicaCount: 1
+  image: mysql:latest
+  rootPassword: password
+  database: employeesystem
+
+node:
+  replicaCount: 2
+  image: satojav749/crude-back:1.3
