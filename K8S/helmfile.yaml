@@ -13,3 +13,8 @@ releases:
     chart: crud-app
     values:
     - values/node-js-values.yml
+
+  - name: prometheus
+    chart: prometheus-community/prometheus
+    values:
+      - values/prometheus-values.yaml
