@@ -1,0 +1,13 @@
+appName: mysql
+appImage: mysql
+appVersion: 8.0
+appReplicas: 1
+containerPort: 3306
+
+containerEnvVar:
+- key: MYSQL_ROOT_PASSWORD
+  value: "password"
+- key: MYSQL_DATABASE
+  value: "employeesystem"
+
+servicePort: 3306

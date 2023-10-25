@@ -1,0 +1,9 @@
+appName: react-docker
+appImage: satojav749/cliant
+appVersion: 1.1
+appReplicas: 1
+containerPort: 80
+
+servicePort: 80
+serviceType: LoadBalancer
+nodePort: 31000

@@ -1,0 +1,15 @@
+releases:
+  - name: frontend
+    chart: crud-app
+    values:
+    - values/client-values.yml
+
+  - name: mysql
+    chart: crud-app
+    values:
+    - values/mysql-values.yml
+
+  - name: nodejs
+    chart: crud-app
+    values:
+    - values/node-js-values.yml

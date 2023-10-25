@@ -1,0 +1,8 @@
+appName: nodejs-server
+appImage: satojav749/crude-back
+appVersion: 1.3
+appReplicas: 1
+containerPort: 3001
+
+servicePort: 3001
+nodePort: 31000
